@@ -210,8 +210,6 @@ public class EventReportActivity extends AppCompatActivity {
                 img_event_picture.setVisibility(View.VISIBLE);
                 img_event_picture.setImageURI(selectedImage);
                 mImgUri = selectedImage;
-            } else {
-                Log.d("test123",requestCode + " " + resultCode + " " + (data==null));
             }
         } catch (Exception ex) {
             ex.printStackTrace();
