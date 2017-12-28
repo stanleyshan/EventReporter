@@ -12,6 +12,16 @@ public class Event {
     private String address;
     private String description;
 
+    public int getCommentNumber() {
+        return CommentNumber;
+    }
+
+    public void setCommentNumber(int commentNumber) {
+        CommentNumber = commentNumber;
+    }
+
+    private int CommentNumber;
+
     public void setTitle(String title) {
         this.title = title;
     }

@@ -30,6 +30,8 @@ import com.google.firebase.storage.UploadTask;
 import java.util.ArrayList;
 import java.util.List;
 
+import static android.view.View.GONE;
+
 public class EventReportActivity extends AppCompatActivity {
     private static final String TAG = EventReportActivity.class.getSimpleName();
     private EditText mEditTextLocation;
@@ -195,6 +197,7 @@ public class EventReportActivity extends AppCompatActivity {
                     mEditTextTitle.setText("");
                     mEditTextLocation.setText("");
                     mEditTextContent.setText("");
+                    img_event_picture.setVisibility(GONE);
                 }
             }
         });
